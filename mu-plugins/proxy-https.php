@@ -2,6 +2,7 @@
 /**
  * Plugin Name: Proxy HTTPS Fix
  */
-if (!empty(['HTTP_X_FORWARDED_PROTO']) && ['HTTP_X_FORWARDED_PROTO'] === 'https') {
-    ['HTTPS'] = 'on';
+// Activate HTTPS detection when behind a reverse proxy that sets X-Forwarded-Proto
+if (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO']) {
+    $_SERVER['HTTPS'] = 'on';
 }
