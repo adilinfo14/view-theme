@@ -1,0 +1,19 @@
+﻿{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "860px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "primary", "name": "Primary", "color": "#0B1220" },
+        { "slug": "accent",  "name": "Accent",  "color": "#22C55E" },
+        { "slug": "base",    "name": "Base",    "color": "#FFFFFF" },
+        { "slug": "muted",   "name": "Muted",   "color": "#F3F4F6" }
+      ]
+    }
+  }
+}
