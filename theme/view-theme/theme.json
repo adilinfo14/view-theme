@@ -9,11 +9,192 @@
     "color": {
       "defaultPalette": false,
       "palette": [
-        { "slug": "primary", "name": "Primary", "color": "#0B1220" },
-        { "slug": "accent",  "name": "Accent",  "color": "#22C55E" },
-        { "slug": "base",    "name": "Base",    "color": "#FFFFFF" },
-        { "slug": "muted",   "name": "Muted",   "color": "#F3F4F6" }
+        {
+          "slug": "primary",
+          "name": "Primary",
+          "color": "#0B1220"
+        },
+        {
+          "slug": "secondary",
+          "name": "Secondary",
+          "color": "#64748B"
+        },
+        {
+          "slug": "accent",
+          "name": "Accent",
+          "color": "#22C55E"
+        },
+        {
+          "slug": "base",
+          "name": "Base",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "muted",
+          "name": "Muted",
+          "color": "#F3F4F6"
+        },
+        {
+          "slug": "border",
+          "name": "Border",
+          "color": "#E2E8F0"
+        },
+        {
+          "slug": "textLight",
+          "name": "Text Light",
+          "color": "#94A3B8"
+        }
       ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "fontSizes": [
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "base",
+          "name": "Base",
+          "size": "1rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "h4",
+          "name": "Heading 4",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "h3",
+          "name": "Heading 3",
+          "size": "1.875rem"
+        },
+        {
+          "slug": "h2",
+          "name": "Heading 2",
+          "size": "2.25rem"
+        },
+        {
+          "slug": "h1",
+          "name": "Heading 1",
+          "size": "3rem"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+          "name": "System Sans",
+          "slug": "system-sans"
+        }
+      ]
+    },
+    "spacing": {
+      "blockGap": "1.5rem"
+    },
+    "border": {
+      "radius": true
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--base)",
+      "text": "var(--wp--preset--color--primary)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system-sans)",
+      "fontSize": "var(--wp--preset--font-size--base)",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontWeight": "600",
+          "lineHeight": "1.25"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h1)",
+          "fontWeight": "700",
+          "lineHeight": "1.1"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h2)",
+          "fontWeight": "700",
+          "lineHeight": "1.15"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h3)",
+          "fontWeight": "600",
+          "lineHeight": "1.2"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h4)",
+          "fontWeight": "600",
+          "lineHeight": "1.3"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--accent)"
+        },
+        ":hover": {
+          "color": {
+            "text": "#16A34A"
+          }
+        }
+      },
+      "button": {
+        "typography": {
+          "fontSize": "1rem",
+          "fontWeight": "600",
+          "textTransform": "none"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.75rem",
+            "right": "1.5rem",
+            "bottom": "0.75rem",
+            "left": "1.5rem"
+          }
+        },
+        "border": {
+          "radius": "0.75rem"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "variations": {
+          "outline": {
+            "border": {
+              "width": "2px",
+              "style": "solid",
+              "color": "var(--wp--preset--color--primary)"
+            },
+            "color": {
+              "background": "transparent",
+              "text": "var(--wp--preset--color--primary)"
+            }
+          }
+        }
+      },
+      "core/buttons": {
+        "spacing": {
+          "blockGap": "0.75rem"
+        }
+      }
     }
   }
 }
